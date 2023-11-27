@@ -11,8 +11,8 @@ import dayjs from 'dayjs';
 import { darkColor, lightColor } from './assets/style';
 import { useRecoilValue } from 'recoil';
 import { themeState } from './state/theme';
-import Playlist from './pages/Playlist';
-import MainLayout from './assets/layout/MainLayout';
+import Playlist from './pages/Playlist/PlayList';
+import MainLayout from './layout/MainLayout';
 
 // Dayjs
 

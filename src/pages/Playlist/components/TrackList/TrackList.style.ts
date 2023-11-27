@@ -13,12 +13,3 @@ export const TrackHeader = styled.div`
   color: ${({ theme }) => theme.ContentSecondary};
   gap: 12px;
 `;
-
-export const TrackItem = styled.div`
-  display: grid;
-  grid-template-columns: 16px 40% 20% 30% 10%;
-
-  font-size: 14px;
-  color: ${({ theme }) => theme.ContentSecondary};
-  gap: 12px;
-`;

@@ -1,20 +1,12 @@
 import { Color, Flex } from '@/assets/style';
-import { TRANSITION_TIMING } from '@/assets/style/global';
+import { SkeletonView } from '@/assets/style/Skeleton';
 import styled from '@emotion/styled';
 
 export const Container = styled(Flex)`
   width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  overflow: hidden;
-  transition: background-color ${TRANSITION_TIMING};
-  background-color: ${({ theme }) => theme.BackgroundBase};
-`;
-
-export const Header = styled(Flex)`
-  width: 100%;
   height: 30vh;
   padding: 24px;
+  background-color: ${({ theme }) => theme.BackgroundBase};
   background: linear-gradient(transparent 0, rgba(0, 0, 0, 0.5) 100%);
 `;
 
@@ -40,4 +32,24 @@ export const Description = styled.span`
   font-size: 14px;
   font-weight: 500;
   color: ${Color.Gray300};
+`;
+
+export const SkeletonImage = styled(SkeletonView)`
+  width: 240px;
+  height: 240px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+`;
+
+export const SkeletonTitle = styled(SkeletonView)`
+  width: 50vh;
+  height: 96px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+`;
+
+export const SkeletonDescription = styled(SkeletonView)`
+  width: 40vh;
+  height: 16px;
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
 `;
